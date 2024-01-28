@@ -83,18 +83,16 @@ p{
 .navbar {
   height: 75px;
   width: 100%;
-  background-color: transparent;
+  background-color: #fff;
   padding: 0 5%;  
   display: flex;
   align-items: center;
-  position: absolute;
+  position: fixed;
   z-index: 55555555555555555555;
+  box-shadow: 1px 1px 5px 1px #0000003f;
 }
 
-.navbar  .nav-header {
-  width: 20%;
 
-}
 
 .navbar  .nav-header  .nav-logo {
   display: inline-block;
@@ -103,7 +101,7 @@ p{
 }
 
 .navbar .nav-logo img {
-  width: 200px  !important;
+  width: 120px  !important;
 }
 
 .navbar .nav-btn {
@@ -171,8 +169,8 @@ p{
   color: var(--btnColor) !important;
 }
 
-.fix {
-  background-color: #0B60B0 ;
+/* .fix {
+  background-color: #40A2D8 ;
   position: fixed !important;
   top: 0;
   right: 0;
@@ -187,11 +185,11 @@ p{
   animation-fill-mode: forwards;
   padding: 0 5%;
 
-}
-.fix  .nav-links a,
+} */
+/* .fix  .nav-links a,
 .fix .nav-links li{
   color: var(--body_bgColor);
-}
+} */
 @keyframes tranz {
   0% {
     transform: translateY(-100px);
@@ -371,9 +369,8 @@ p{
   transform: translateY(-20px);
 }
 .S2_home .row .col img{
-  width: 70px;
-  height: 70px;
-
+  width: 100px;
+  height: 100px;
 }
 .S2_home .row a {
   color: var(--btnColor);
@@ -381,6 +378,10 @@ p{
 .S2_home .row .col h4{
   margin-top: 20px ;
   color: var(--btnColor);
+}
+.arabic{
+  width: 150px !important;
+  height: 150px !important  ;
 }
 .S3_home{
   padding: 70px 0;
@@ -514,14 +515,14 @@ p{
 }
 .catt .link{
   position: absolute;
-  left: 100px;
-  top: 50%;
+  left: 81px;
+  top: 162px;
 }
-.catt .link a{
+.catt .link span{
   padding: 10px 30px;
-  background-color: var(--btnColor);
   border-radius: 5px;
-  color: var(--main_bgColor);
+  color: #000;
+  font-size: 50px;
 }
 /* /////////supCatt////////// */
 .supCatt{
@@ -549,7 +550,6 @@ p{
 }
 .S_product .box{
   padding: 25px;
-  border: 2px solid #C683D7;
   border-radius: 5px;
 }
 .S_product .box img{
@@ -563,6 +563,9 @@ p{
 .S_product .box ul {
   display: flex;
   justify-content: space-between;
+  border: 2px solid #4144eb;
+  padding: 10px;
+  border-radius: 5px;
 }
 .S_product .box ul a{
   color: var(--btnColor);
@@ -601,8 +604,8 @@ p{
 
 .comments ul img {
   width: 70px !important;
-  height: 70px;
-  border-radius: 50%;
+  height: 70px !important;
+  border-radius: 50% !important;
   padding: 0;
   border: 1px solid var(--Secondary-color);
 }
@@ -665,7 +668,7 @@ p{
   bottom: 0;
   right: 0;
   width: 250px;
-  background-color: var(--bgColor);
+  background-color: var(--body_bgColor);
   z-index: 555;
   padding-top: 100px;
   overflow-y: scroll;
@@ -756,6 +759,7 @@ p{
   overflow-x: hidden;
   padding-left: 40px;
   margin-right: 20%;
+  background-color: #F7F2E5;
 }
 .asssssaas{
   justify-content: space-between !important;
@@ -784,10 +788,25 @@ p{
 .form{
   padding: 70px 0;
 }
-.form input{
-    height: 40px;
+.form input {
+    height: 40px !important;
     border-radius: 5px;
     margin: 10px 0;
+    color: var(--btnColor) !important;
+}
+.form select{
+  border-radius: 5px;
+  margin: 10px 0;
+  color: var(--btnColor) !important;
+}
+.form select option{
+  font-size: 18px;
+  padding: 10px 0;
+}
+.form label  {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 18px;
 }
 .form input textarea{
   margin: 10px 0;
@@ -831,8 +850,21 @@ p{
   font-size: 18px;
   margin: 5px;
 }
-
-
+.term{
+  transition: all ease-in .3s;
+  display: block; 
+}
+.term img{
+  border-top-right-radius: 100px !important;
+  border-bottom-left-radius: 100px !important;
+  transition: all ease-in .3s;
+}
+.term:hover img{
+  border-top-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-top-left-radius: 100px !important;
+  border-bottom-right-radius: 100px !important;
+}
 
 
 
@@ -871,7 +903,7 @@ p{
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  height: 300px;
+  height: 400px;
   padding: 70px 10%;
   background-color: var(--bgColor);
   background-image: url(../img/S1_home.jpeg);
@@ -897,7 +929,7 @@ p{
   display: flex;
 }
 .intro_sections ul li{
-  color: var(--btnColor);
+  color: var(--body_bgColor);
   margin: 10px  ;
   font-size: 20px;
 }
@@ -908,20 +940,21 @@ p{
 .footer{
   padding: 20px 0;
   text-align: center;
-  background-color: var(--Secondary-color );
+  background-color: var(--body_bgColor );
+  box-shadow: 1px 1px 10px 1px #0000003f;
 }
 .top_foot img{
   width: 300px;
   margin: 20px 0;
 }
 .top_foot h3{
-  color: var(--body_bgColor);
+  color: var(--btnColor);
   font-size: 25px;
 }
 .top_foot h4{
   margin-top: 30px;
   font-size: 30px;
-  color: var(--body_bgColor);
+  color: var(--btnColor);
 
 }
 .top_foot p{
@@ -936,17 +969,23 @@ p{
   margin: 10px 0;
 }
 .top_foot ul li svg{
-  color: var(--body_bgColor);
+  color: var(--btnColor);
   font-size: 30px;
 }
 .top_foot ul li a{
-  color: var(--textColor);
+  color: var(--btnColor);
   font-size: 16px;
   transition: all ease-in .2s;
 }
-.top_foot .links  a:hover{
-  margin-right: 15px;
+.top_foot .links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.top_foot .links a{
+  margin:  0 20px;
+}
+
 .top_foot .sochial{
   display: flex;
   align-items: flex-start;
@@ -964,10 +1003,10 @@ p{
   display: flex;
 }
 .last_foot li{
-  color: var(--textColor);
+  color: var(--btnColor);
 }
 .last_foot a{
-  color: var(--textColor);
+  color: var(--pragrafColor);
 }
 
 
@@ -1037,6 +1076,129 @@ p{
   margin-right: 0%;
   padding: 70px 5%;
 }
+.catt .link {
+  position: absolute;
+  left: 25px;
+  top: 55px;
+}
+.catt .link span{
+  font-size: 24px;
+}
+
+ }
+
+
+ @media screen and (min-width:768px) and (max-width:1023px){
+.S2_home .row .col {
+    width: 33.3333% !important;
+    flex: none !important;
+    margin: 10px 0;
+  }
+.contant {
+  margin-right: 0%;
+  padding: 70px 5%;
+}
+ }
+
+.saaasdadadad{
+background-color: #F7F2E5;
+}
+
+
+
+.WahtsApp {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #11BA17;
+  display: flex;
+  align-items: center;
+  z-index: 222;
+  justify-content: center;
+}
+
+.WahtsApp a svg {
+  color: #fff;
+  font-size: 50px;
+}
+.dropdown123 button{
+  background-color: var(--btnColor);
+  border-radius: 5px;
+  transition: all ease-in .2s;
+}
+.dropdown123 button:hover{
+  background-color: var(--btnColor);
+  border-radius: 10px;
+}
+.dropdown123 button:focus {
+  background-color: var(--btnColor);
+  box-shadow: none;
+  border-radius: 10px;
+}
+.dropdown123 img{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.dropdown123 h6{
+  display: inline-block;
+  margin: 0 10px;
+}
+.Teachers2 .box {
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+}  
+/* media */
+ @media screen and (min-width:1px) and (max-width:767px){
+  h1 {
+      font-size: 22px !important;
+    }
+  
+    h3 {
+      font-size: 20px !important;
+  
+    }
+  
+    p {
+      font-size: 14px !important;
+    }
+.S2_home .row .col {
+  width: 100% !important;
+  flex: none !important;
+  margin: 10px 0;
+}
+.Teachers .box ul {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contant{
+  margin-right: 0%;
+  padding: 70px 5%;
+}
+.catt .link {
+  position: absolute;
+  left: 25px;
+  top: 55px;
+}
+.catt .link span{
+  font-size: 24px;
+}
+.top_foot .links {
+  display: flex;
+  flex-direction: column;
+}
+
+.top_foot .links a {
+}
+
+
+
+
  }
 
 
